@@ -88,6 +88,9 @@ export default function Navbar() {
             onClick={toggleMobileMenu}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            aria-label={
+              isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"
+            }
           >
             {isMobileMenuOpen ? (
               <XMarkIcon className="h-6 w-6" />

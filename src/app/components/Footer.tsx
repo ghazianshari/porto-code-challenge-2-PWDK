@@ -30,7 +30,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
-              aria-label="LinkedIn"
+              aria-label="Twitter"
             >
               <FaTwitter className="h-6 w-6" />
             </Link>
@@ -39,7 +39,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
-              aria-label="Twitter"
+              aria-label="LinkedIn"
             >
               <FaLinkedin className="h-6 w-6" />
             </Link>
