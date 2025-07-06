@@ -59,6 +59,7 @@ export default function Hero() {
               className="hover:text-primary dark:hover:text-primary text-2xl text-gray-600 transition-colors dark:text-gray-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="GitHub"
             >
               <FaGithub />
             </motion.a>
@@ -69,6 +70,7 @@ export default function Hero() {
               className="hover:text-primary dark:hover:text-primary text-2xl text-gray-600 transition-colors dark:text-gray-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="LinkedIn"
             >
               <FaLinkedin />
             </motion.a>
@@ -79,6 +81,7 @@ export default function Hero() {
               className="hover:text-primary dark:hover:text-primary text-2xl text-gray-600 transition-colors dark:text-gray-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Twitter"
             >
               <FaTwitter />
             </motion.a>
