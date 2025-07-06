@@ -9,11 +9,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { MdEmojiPeople, MdHome, MdLocalPhone, MdWork } from "react-icons/md";
 import { useTheme } from "../context/ThemeContext";
-import { MdHome } from "react-icons/md";
-import { MdEmojiPeople } from "react-icons/md";
-import { MdWork } from "react-icons/md";
-import { MdLocalPhone } from "react-icons/md";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();

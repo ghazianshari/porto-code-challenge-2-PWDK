@@ -32,7 +32,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   // Inisialisasi
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as Theme | null;
-    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
     const initialTheme = savedTheme || systemTheme;
 
     setThemeState(initialTheme);
@@ -40,7 +43,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     setMounted(true);
   }, []);
 
-  // Prevent flash of wrong theme
+  // Prevent flash of wrong theme (ChatGPT)
   if (!mounted) {
     return null;
   }
@@ -52,6 +55,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
+// useTheme taro di Navbar
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (context === undefined) {

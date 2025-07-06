@@ -1,29 +1,36 @@
-'use client'
+"use client";
 
-import { fadeIn, fadeInUp, scaleIn } from '@/utils/animations';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { fadeIn, fadeInUp, scaleIn } from "@/utils/animations";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <section className="py-28">
-      <div className="container max-w-7xl mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center">
+      <div className="container mx-auto max-w-7xl px-4">
+        <div className="mx-auto max-w-3xl text-center">
           <motion.div
-            className='flex justify-center items-center mb-4'
+            className="mb-4 flex items-center justify-center"
             {...scaleIn}
             transition={{ delay: 0.2 }}
           >
-            <Image src="/ghazi/ghazi-hero-profile-img.jpg" alt="profile" width={100} height={100} className="rounded-full mb-4 w-25 h-25 object-cover ring-2 ring-primary" />
+            <Image
+              src="/ghazi/ghazi-hero-profile-img.jpg"
+              alt="profile"
+              width={100}
+              height={100}
+              className="ring-primary mb-4 h-25 w-25 rounded-full object-cover ring-2"
+            />
           </motion.div>
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="mb-6 text-4xl font-bold md:text-6xl"
             {...fadeInUp}
             transition={{ delay: 0.3 }}
           >
-            Hi, I&apos;m <motion.span
+            Hi, I&apos;m{" "}
+            <motion.span
               className="text-primary"
               {...fadeIn}
               transition={{ delay: 0.8 }}
@@ -32,14 +39,16 @@ export default function Hero() {
             </motion.span>
           </motion.h1>
           <motion.p
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
+            className="mb-8 text-xl text-gray-600 md:text-2xl dark:text-gray-300"
             {...fadeInUp}
             transition={{ delay: 0.4 }}
           >
-            <span className='text-red-400'>Human</span> | <span className='text-green-400'>Earth</span> | <span className='text-yellow-400'>Full-stack Developer</span>
+            <span className="text-red-400">Human</span> |{" "}
+            <span className="text-green-400">Earth</span> |{" "}
+            <span className="text-yellow-400">Full-stack Developer</span>
           </motion.p>
           <motion.div
-            className="flex justify-center space-x-4 mb-8"
+            className="mb-8 flex justify-center space-x-4"
             {...fadeInUp}
             transition={{ delay: 0.5 }}
           >
@@ -47,7 +56,7 @@ export default function Hero() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
+              className="hover:text-primary dark:hover:text-primary text-2xl text-gray-600 transition-colors dark:text-gray-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -57,7 +66,7 @@ export default function Hero() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
+              className="hover:text-primary dark:hover:text-primary text-2xl text-gray-600 transition-colors dark:text-gray-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -67,7 +76,7 @@ export default function Hero() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
+              className="hover:text-primary dark:hover:text-primary text-2xl text-gray-600 transition-colors dark:text-gray-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -75,28 +84,22 @@ export default function Hero() {
             </motion.a>
           </motion.div>
           <motion.div
-            className="flex flex-col md:flex-row justify-center gap-4"
+            className="flex flex-col justify-center gap-4 md:flex-row"
             {...fadeInUp}
             transition={{ delay: 0.6 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/projects"
-                className="bg-primary dark:text-black font-bold inline-block w-full md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                className="bg-primary hover:bg-primary/90 inline-block w-full rounded-lg px-8 py-3 font-bold text-white transition-colors md:w-auto dark:text-black"
               >
                 View Projects
               </Link>
             </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/contact"
-                className="inline-block font-bold w-full bg-gray-500  md:w-auto text-white dark:text-black px-8 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                className="inline-block w-full rounded-lg bg-gray-500 px-8 py-3 font-bold text-white transition-colors hover:bg-gray-300 md:w-auto dark:text-black dark:hover:bg-gray-600"
               >
                 Contact Me
               </Link>
@@ -106,4 +109,4 @@ export default function Hero() {
       </div>
     </section>
   );
-} 
+}

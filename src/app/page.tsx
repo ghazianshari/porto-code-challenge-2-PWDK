@@ -1,9 +1,6 @@
-// import Blogs from "./components/Blogs";
 import About from "./components/About";
 import Hero from "./components/Hero";
-// import Newsletter from "./components/Newsletter";
 import Projects from "./components/Projects";
-
 
 export default function Home() {
   return (
@@ -11,8 +8,6 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
-      {/* <Blogs /> */}
-      {/* <Newsletter /> */}
     </main>
   );
-} 
+}

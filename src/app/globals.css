@@ -17,7 +17,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-a {
+Link {
   transition: all 0.2s ease;
 }
 
