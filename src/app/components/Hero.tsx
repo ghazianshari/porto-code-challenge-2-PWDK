@@ -60,8 +60,9 @@ export default function Hero() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="GitHub"
+              role="link"
             >
-              <FaGithub />
+              <FaGithub aria-hidden="true" />
             </motion.a>
             <motion.a
               href="https://linkedin.com"
@@ -71,8 +72,9 @@ export default function Hero() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="LinkedIn"
+              role="link"
             >
-              <FaLinkedin />
+              <FaLinkedin aria-hidden="true" />
             </motion.a>
             <motion.a
               href="https://twitter.com"
@@ -82,8 +84,9 @@ export default function Hero() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Twitter"
+              role="link"
             >
-              <FaTwitter />
+              <FaTwitter aria-hidden="true" />
             </motion.a>
           </motion.div>
           <motion.div
