@@ -16,27 +16,33 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-6">
-            <a
+            <Link
               href="https://github.com/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
+              aria-label="GitHub"
             >
               <FaGithub className="h-6 w-6" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://twitter.com/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
+              aria-label="LinkedIn"
             >
               <FaTwitter className="h-6 w-6" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://linkedin.com/in/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
+              aria-label="Twitter"
             >
               <FaLinkedin className="h-6 w-6" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
