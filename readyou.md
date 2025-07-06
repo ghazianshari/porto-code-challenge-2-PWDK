@@ -1,0 +1,4 @@
+REGEX TO CHANGE STRING VALUE OF A KEY-VALUE PAIR OBJECT.
+EXAMPLE KEY slug.
+
+(?<=slug: ')[^']\*(?=')
