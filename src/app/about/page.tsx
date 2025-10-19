@@ -1,8 +1,8 @@
 "use client";
 
 import {
-  cardHover,
-  cardHoverSmall,
+  // cardHover,
+  // cardHoverSmall,
   fadeIn,
   fadeInDown,
   fadeInUp,
@@ -23,10 +23,12 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { BigFiveResults } from "../components/TheBigFive";
+import { BigFiveDetails } from "../components/BigFiveDetails";
 
 export default function About() {
   return (
-    <div className="container mx-auto max-w-7xl py-12">
+    <div className="container mx-auto max-w-7xl">
       <div className="text-center">
         <motion.h1
           className="mb-12 inline-block border-b-4 border-yellow-400 pb-2 text-center text-3xl font-bold"
@@ -38,14 +40,14 @@ export default function About() {
 
       {/* Bio Section */}
       <motion.section
-        className="text-md text-secondary mx-auto mb-16 grid max-w-5xl grid-cols-1 gap-12 text-justify md:grid-cols-2"
+        className="text-md text-secondary mx-auto mb-16 grid max-w-4xl grid-cols-1 items-start gap-8 text-justify md:grid-cols-2"
         {...fadeInUp}
       >
         <div className="space-y-6">
-          <h3 className="text-primary flex items-center gap-2 text-xl font-semibold">
+          <h3 className="text-primary flex items-center gap-3 text-xl font-semibold">
             <GiJourney className="text-black dark:text-yellow-600" /> My Journey
           </h3>
-          <p>
+          <p className="text-secondary leading-relaxed">
             I’m a 25-year-old tech enthusiast who’s currently diving deep into
             full-stack web development through a bootcamp at Purwadhika. My
             journey started with self-teaching while working full-time as a
@@ -53,7 +55,7 @@ export default function About() {
             JavaScript — which eventually led me to explore React and Next.js
             more seriously.
           </p>
-          <p>
+          <p className="text-secondary leading-relaxed">
             I love the feeling of solving real-world problems with code.
             There&apos;s something deeply satisfying about getting direct,
             logical feedback from a machine — it’s honest, it’s clear, and it
@@ -67,18 +69,18 @@ export default function About() {
         </div>
 
         <div className="space-y-6">
-          <h3 className="text-primary flex items-center gap-2 text-xl font-semibold">
+          <h3 className="text-primary flex items-center gap-3 text-xl font-semibold">
             <GiDirectionSigns className="text-black dark:text-yellow-600" />{" "}
             Where I&apos;m Headed
           </h3>
-          <p>
+          <p className="text-secondary leading-relaxed">
             Right now, I’m still finding my footing between frontend and
             backend, but I’m starting to see how the backend might be where I
             truly shine. I’m looking for opportunities as a junior developer
             where I can contribute to real projects, learn from senior devs, and
             finally feel that “I can do this” moment for real.
           </p>
-          <p>
+          <p className="text-secondary leading-relaxed">
             Outside of coding, I’m a coffee nerd, a proud gamer, anime lover
             (WIBU), and a lover of rap, indie, classic, and rock music. Not a
             cat person, but hey — I do have a cat.
@@ -97,15 +99,15 @@ export default function About() {
           </motion.h2>
         </div>
         <motion.div
-          className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
         >
           <motion.div
-            className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
+            className="dark:bg-dark/50 h-full rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHover}
+            // {...cardHover}
           >
             <div className="flex gap-2">
               <FaCode className="text-primary mb-4 h-8 w-8 dark:text-yellow-100" />
@@ -113,7 +115,7 @@ export default function About() {
                 Frontend
               </h3>
             </div>
-            <ul className="text-secondary space-y-2">
+            <ul className="text-secondary space-y-3 leading-relaxed">
               <li className="flex items-center gap-2">
                 <SiReact className="dark:text-yellow-600" />
                 <SiNextdotjs className="dark:text-yellow-600" />
@@ -136,9 +138,9 @@ export default function About() {
           </motion.div>
 
           <motion.div
-            className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
+            className="dark:bg-dark/50 h-full rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHover}
+            // {...cardHover}
           >
             <div className="flex gap-2">
               <FaLaptopCode className="text-primary mb-4 h-8 w-8 dark:text-yellow-100" />
@@ -146,7 +148,7 @@ export default function About() {
                 Backend
               </h3>
             </div>
-            <ul className="text-secondary space-y-2">
+            <ul className="text-secondary space-y-3 leading-relaxed">
               <li className="flex items-center gap-2">
                 <SiNodedotjs className="dark:text-yellow-600" />
                 Node.js
@@ -163,9 +165,9 @@ export default function About() {
           </motion.div>
 
           <motion.div
-            className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
+            className="dark:bg-dark/50 h-full rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHover}
+            // {...cardHover}
           >
             <div className="flex gap-2">
               <FaGraduationCap className="text-primary mb-4 h-8 w-8 dark:text-yellow-100" />
@@ -173,7 +175,7 @@ export default function About() {
                 Tools & Others
               </h3>
             </div>
-            <ul className="text-secondary space-y-2">
+            <ul className="text-secondary space-y-3 leading-relaxed">
               <li className="flex items-center gap-2">
                 <FaGitAlt className="dark:text-yellow-600" />
                 <FaGithub className="dark:text-yellow-600" />
@@ -202,17 +204,17 @@ export default function About() {
         >
           {/* NUSAPAY 2 */}
           <motion.div
-            className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
+            className="dark:bg-dark/60 rounded-lg border-2 border-yellow-300 bg-white p-6 shadow-lg transition-shadow duration-200 hover:shadow-2xl"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
-            <h3 className="mb-2 text-xl font-semibold">
+            <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
               Nusapay Solusi Indonesia
             </h3>
             <p className="text-primary mb-2">
               HRGA Division - General Affairs • Staff Employee • 2023
             </p>
-            <ul className="text-secondary list-inside list-disc space-y-2">
+            <ul className="text-secondary marker:text-primary list-inside list-disc space-y-3 leading-relaxed">
               <li>
                 Manage and process procurement or purchase requests for goods
                 and services needed for office operations.
@@ -259,17 +261,17 @@ export default function About() {
 
           {/* NUSAPAY 1 */}
           <motion.div
-            className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
+            className="dark:bg-dark/60 rounded-lg border-2 border-yellow-300 bg-white p-6 shadow-lg transition-shadow duration-200 hover:shadow-2xl"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
-            <h3 className="mb-2 text-xl font-semibold">
+            <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
               Nusapay Solusi Indonesia
             </h3>
             <p className="text-primary mb-2">
               HRGA Division - HR Assistant • Staff Employee • 2022
             </p>
-            <ul className="text-secondary list-inside list-disc space-y-2">
+            <ul className="text-secondary marker:text-primary list-inside list-disc space-y-3 leading-relaxed">
               <li>Manage and document employee-related-information</li>
               <li>Research and understand employee-related regulations</li>
             </ul>
@@ -277,29 +279,17 @@ export default function About() {
 
           {/* DAMN COFFEE */}
           <motion.div
-            className="dark:bg-dark/50 rounded-lg bg-white p-6 text-justify shadow-md"
+            className="dark:bg-dark/60 rounded-lg border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
-            <h3 className="mb-2 text-xl font-semibold">Damn Coffee</h3>
+            <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
+              Damn Coffee
+            </h3>
             <p className="text-primary mb-2">
               Pretty Much Almost Everything • Employee • 2021
             </p>
-            <ul className="text-secondary list-inside list-disc space-y-2">
-              <p>
-                Damn Coffee is a coffeeshop. When I say i pretty much handle
-                almost everything, i am not joking. In this coffeeshop, it is
-                seems like i am the right-hand-man of the owner whereas the
-                owner of the coffee shop is a good friend of my uncle. In this
-                coffeeshop here is also the first place I am starting and
-                bumping into programming. The first spark is when I was handling
-                a POS of the coffee shop (using Moka POS at that time), and I
-                was furious on how some of the features of Moka POS does not
-                work as intended or have room for improvements. Hence, I did
-                online self-research regarding that, and be introduced on app
-                development and the world of programming. My tasks and roles
-                are:
-              </p>
+            <ul className="text-secondary marker:text-primary list-inside list-disc space-y-3 leading-relaxed">
               <li>Documenting and creating SOP for food and beverages</li>
               <li>Communicate and handle suppliers</li>
               <li>Innovate new products</li>
@@ -315,22 +305,15 @@ export default function About() {
 
           {/* MULYANA ABRAR ADVOCATE */}
           <motion.div
-            className="dark:bg-dark/50 rounded-lg bg-white p-6 text-justify shadow-md"
+            className="dark:bg-dark/60 rounded-lg border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
-            <h3 className="mb-2 text-xl font-semibold">
+            <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
               Mulyana Abrar Advocate
             </h3>
             <p className="text-primary mb-2">Paralegal • Internship • 2021</p>
-            <ul className="text-secondary list-inside list-disc space-y-2">
-              <p>
-                Mulyana Abrar Advocate is a lawfirm that is focused on handling
-                environmental cases, specific on it&apos;s civil aspects rather
-                than criminal aspects. It&apos;s notable clients are
-                Transjakarta and PT Kereta Api Indonesia. My tasks and roles in
-                this lawfirm are mostly assistive:
-              </p>
+            <ul className="text-secondary marker:text-primary list-inside list-disc space-y-3 leading-relaxed">
               <li>
                 Researching and compiling relevant regulations for a particular
                 compliances case
@@ -364,20 +347,18 @@ export default function About() {
           <motion.div
             className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
-            <h3 className="mb-2 text-xl font-semibold">
-              Purwadhika (On Progress)
-            </h3>
+            <h3 className="mb-2 text-xl font-semibold">Purwadhika</h3>
             <p className="text-primary mb-2">
-              Bootcamp • Information System Undergraduate • 2025
+              Bootcamp • Fullstack Developer • 2025
             </p>
             {/* <p className="text-secondary">lorem ipsum dolor sit amet</p> */}
           </motion.div>
           <motion.div
             className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
             <h3 className="mb-2 text-xl font-semibold">
               Universitas Terbuka (On Progress)
@@ -390,7 +371,7 @@ export default function About() {
           <motion.div
             className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
             <h3 className="mb-2 text-xl font-semibold">
               University of Indonesia
@@ -403,7 +384,7 @@ export default function About() {
           <motion.div
             className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
             <h3 className="mb-2 text-xl font-semibold">John Robert Powers</h3>
             <p className="text-primary mb-2">
@@ -414,7 +395,7 @@ export default function About() {
           <motion.div
             className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
             <h3 className="mb-2 text-xl font-semibold">
               Insan Cendekia Madani
@@ -427,7 +408,7 @@ export default function About() {
           <motion.div
             className="dark:bg-dark/50 rounded-lg bg-white p-6 shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            // {...cardHoverSmall}
           >
             <h3 className="mb-2 text-xl font-semibold">Bina Nusantara</h3>
             <p className="text-primary mb-2">
@@ -437,6 +418,10 @@ export default function About() {
           </motion.div>
         </motion.div>
       </motion.section>
+
+      {/* Big Five Results */}
+      <BigFiveResults />
+      <BigFiveDetails />
     </div>
   );
 }

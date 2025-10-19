@@ -1,5 +1,7 @@
+import "aos/dist/aos.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import AosInit from "./components/AosInit";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./context/ThemeContext";
@@ -30,6 +32,7 @@ export default function RootLayout({
       <body
         className={`bg-white transition-colors dark:bg-gray-900 dark:text-white ${geistSans.variable} ${geistMono.variable}`}
       >
+        <AosInit />
         <ThemeProvider>
           <Navbar />
           <main className="min-h-screen pt-24">{children}</main>

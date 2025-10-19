@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
-import { fadeInUp, staggerContainer } from '@/utils/animations'
-import { motion } from 'framer-motion'
-import ProjectCardMap from './ProjectCardMap'
+import { fadeInUp, staggerContainer } from "@/utils/animations";
+import { motion } from "framer-motion";
+import ProjectCardMap from "./ProjectCardMap";
 
 export default function Projects() {
   return (
     <section className="py-20">
-      <div className="container max-w-7xl mx-auto px-4">
-        <div className='text-center'>
+      <div data-aos="fade-up" className="container mx-auto max-w-7xl px-4">
+        <div className="text-center">
           <motion.h2
-            className="inline-block text-3xl font-bold mb-12 text-center border-b-4 border-yellow-400 pb-2"
+            className="mb-12 inline-block border-b-4 border-yellow-400 pb-2 text-center text-3xl font-bold"
             {...fadeInUp}
           >
             Featured Projects
@@ -18,7 +18,7 @@ export default function Projects() {
         </div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 gap-8 md:grid-cols-3"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
@@ -28,5 +28,5 @@ export default function Projects() {
         </motion.div>
       </div>
     </section>
-  )
-} 
+  );
+}

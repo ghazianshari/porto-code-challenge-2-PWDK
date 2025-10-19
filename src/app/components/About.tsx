@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <section className="py-20">
-      <div className="container mx-auto max-w-7xl px-4">
+      <div data-aos="fade-up" className="container mx-auto max-w-7xl px-4">
         <div className="text-center">
           <motion.h2
             className="mb-12 inline-block border-b-4 border-yellow-400 pb-2 text-center text-3xl font-bold"

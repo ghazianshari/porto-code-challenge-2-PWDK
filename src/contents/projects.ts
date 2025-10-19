@@ -3,12 +3,13 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: 'Dummy E-Commerce',
-    description: 'A full-stack e-commerce platform built with Next.js, TypeScript, Tailwind CSS, Framer Motion, and Backendless.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Backendless'],
+    title: 'Freshnear',
+    link: 'https://freshnear.store',
+    description: 'A full-stack grocery app platform built with Next.js, TypeScript, Tailwind CSS, Express, and PostgreSQL. There is user and dashboard flow.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Express', 'Prisma', 'PostgreSQL'],
     githubLink: 'https://github.com',
     demoLink: '/',
-    image: '/projects/SampleMarketPlace.png',
+    image: '/projects/freshnear-sample.png',
     slug: 'slug-1',
     starmethod: {
       s: "This is to be filled further on purwadhika progression",
@@ -19,12 +20,13 @@ export const projects: Project[] = [
 
   },
   {
-    title: 'Project 2',
-    description: 'This is to be filled further on purwadhika progression',
-    technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
+    title: 'Sample SaaS Landing Page',
+    link: 'https://mistertuki.vercel.app',
+    description: 'A dummy sample of a SaaS landing page.',
+    technologies: ['Nest.js', 'Typescript', 'Tailwind CSS',],
     githubLink: 'https://github.com',
     demoLink: '/',
-    image: '/logo/tgma-logo-clean.png',
+    image: '/projects/tukimandkk-sample.png',
     slug: 'slug-2',
     starmethod: {
       s: "This is to be filled further on purwadhika progression",
@@ -34,8 +36,9 @@ export const projects: Project[] = [
     }
   },
   {
-    title: 'Project 3',
-    description: 'This is to be filled further on purwadhika progression',
+    title: 'Simple Pokeman Search App',
+    link: '/pokemon-app',
+    description: 'A simple pokemon search app.',
     technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
     githubLink: 'https://github.com',
     demoLink: '/',
@@ -50,6 +53,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Monkey',
+    link: 'https://freshnear.store',
     description: 'Ini adalah monyet',
     technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
     githubLink: 'https://github.com',
@@ -65,6 +69,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Bustin Jieber',
+    link: 'https://freshnear.store',
     description: 'Ini adalah bustin jieber',
     technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
     githubLink: 'https://github.com',
@@ -80,6 +85,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Kampret',
+    link: 'https://freshnear.store',
     description: 'Ini adalah kampret',
     technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
     githubLink: 'https://github.com',
@@ -95,6 +101,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Under Construction',
+    link: 'https://freshnear.store',
     description: 'Under construction',
     technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
     githubLink: 'https://github.com',
@@ -110,6 +117,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Construction Under',
+    link: 'https://freshnear.store',
     description: 'Construction under',
     technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
     githubLink: 'https://github.com',
