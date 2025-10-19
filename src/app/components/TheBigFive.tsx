@@ -28,7 +28,7 @@ export function BigFiveResults() {
     },
     {
       trait: "Conscientiousness",
-      score: 80,
+      score: 74,
       color: "rgb(23, 201, 100)",
       description: "Tendency to show self-discipline and aim for achievement",
     },

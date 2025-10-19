@@ -116,7 +116,7 @@ export const NeuroticismDetails = () => {
                   Self-Consciousness
                 </h3>
               </a>
-              <div className="font-semibold text-gray-500"></div>
+              <div className="font-semibold text-gray-500">Score: 8 (Low)</div>
               <p className="mt-3">
                 Self-conscious individuals are sensitive about what others think
                 of them. Their concern about rejection and ridicule cause them
