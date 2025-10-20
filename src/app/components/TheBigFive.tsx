@@ -35,7 +35,7 @@ export function BigFiveResults() {
   ];
 
   return (
-    <div className="min-h-screen p-8">
+    <div data-aos="fade-in" className="min-h-screen p-8">
       <h1 className="mb-8 text-3xl font-bold">
         My Big Five Personality Results
       </h1>

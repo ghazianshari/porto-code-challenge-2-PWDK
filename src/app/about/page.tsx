@@ -22,6 +22,10 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiBitbucket,
+  SiExpress,
+  SiPhp,
+  SiDocker,
 } from "react-icons/si";
 import { BigFiveResults } from "../components/TheBigFive";
 import { BigFiveDetails } from "../components/BigFiveDetails";
@@ -90,7 +94,12 @@ export default function About() {
       </motion.section>
 
       {/* Skills Section */}
-      <motion.section className="mb-16" {...fadeIn} transition={{ delay: 0.2 }}>
+      <motion.section
+        data-aos="fade-up"
+        className="mb-16"
+        // {...fadeIn}
+        transition={{ delay: 0.2 }}
+      >
         <div className="text-center">
           <motion.h2
             className="mb-12 inline-block border-b-4 border-yellow-400 pb-2 text-center text-3xl font-bold"
@@ -106,8 +115,9 @@ export default function About() {
           animate="animate"
         >
           <motion.div
+            data-aos="fade-right"
             className="dark:bg-dark/50 h-full rounded-lg bg-white p-6 shadow-md"
-            variants={fadeInUp}
+            // variants={fadeInUp}
             // {...cardHover}
           >
             <div className="flex gap-2">
@@ -139,8 +149,10 @@ export default function About() {
           </motion.div>
 
           <motion.div
+            data-aos="zoom-in"
+            data-aos-delay="300"
             className="dark:bg-dark/50 h-full rounded-lg bg-white p-6 shadow-md"
-            variants={fadeInUp}
+            // variants={fadeInUp}
             // {...cardHover}
           >
             <div className="flex gap-2">
@@ -159,15 +171,25 @@ export default function About() {
                 PostgreSQL
               </li>
               <li className="flex items-center gap-2">
+                <SiExpress className="dark:text-yellow-600" />
+                Express.js
+              </li>
+              <li className="flex items-center gap-2">
                 <SiBackendless className="dark:text-yellow-600" />
                 Backendless
+              </li>
+              <li className="flex items-center gap-2">
+                <SiPhp className="dark:text-yellow-600" />
+                PHP (new)
               </li>
             </ul>
           </motion.div>
 
           <motion.div
+            data-aos="fade-left"
+            data-aos-delay="600"
             className="dark:bg-dark/50 h-full rounded-lg bg-white p-6 shadow-md"
-            variants={fadeInUp}
+            // variants={fadeInUp}
             // {...cardHover}
           >
             <div className="flex gap-2">
@@ -182,12 +204,20 @@ export default function About() {
                 <FaGithub className="dark:text-yellow-600" />
                 Git / GitHub
               </li>
+              <li className="flex items-center gap-2">
+                <SiBitbucket className="dark:text-yellow-600" />
+                Bitbucket
+              </li>
+              <li className="flex items-center gap-2">
+                <SiDocker className="dark:text-yellow-600" />
+                Docker
+              </li>
             </ul>
           </motion.div>
         </motion.div>
       </motion.section>
 
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+      <div data-aos="fade-up" className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {/* Experience Section */}
         <motion.section
           className="mb-16"
@@ -210,8 +240,9 @@ export default function About() {
           >
             {/* NUSAPAY 2 */}
             <motion.div
+              data-aos="fade-right"
               className="dark:bg-dark/60 border-2 border-yellow-300 bg-white p-6 shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -267,8 +298,9 @@ export default function About() {
 
             {/* NUSAPAY 1 */}
             <motion.div
+              data-aos="fade-right"
               className="dark:bg-dark/60 border-2 border-yellow-300 bg-white p-6 shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -285,8 +317,9 @@ export default function About() {
 
             {/* DAMN COFFEE */}
             <motion.div
+              data-aos="fade-right"
               className="dark:bg-dark/60 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -311,8 +344,9 @@ export default function About() {
 
             {/* MULYANA ABRAR ADVOCATE */}
             <motion.div
+              data-aos="fade-right"
               className="dark:bg-dark/60 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-2xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -353,8 +387,9 @@ export default function About() {
             animate="animate"
           >
             <motion.div
+              data-aos="fade-left"
               className="dark:bg-dark/50 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -366,8 +401,9 @@ export default function About() {
               {/* <p className="text-secondary">lorem ipsum dolor sit amet</p> */}
             </motion.div>
             <motion.div
+              data-aos="fade-left"
               className="dark:bg-dark/50 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -379,8 +415,9 @@ export default function About() {
               {/* <p className="text-secondary">lorem ipsum dolor sit amet</p> */}
             </motion.div>
             <motion.div
+              data-aos="fade-left"
               className="dark:bg-dark/50 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -392,8 +429,9 @@ export default function About() {
               {/* <p className="text-secondary">lorem ipsum dolor sit amet</p> */}
             </motion.div>
             <motion.div
+              data-aos="fade-left"
               className="dark:bg-dark/50 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -405,8 +443,9 @@ export default function About() {
               {/* <p className="text-secondary">lorem ipsum dolor sit amet</p> */}
             </motion.div>
             <motion.div
+              data-aos="fade-left"
               className="dark:bg-dark/50 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-xl font-extrabold text-yellow-700 dark:text-yellow-300">
@@ -418,8 +457,9 @@ export default function About() {
               {/* <p className="text-secondary">lorem ipsum dolor sit amet</p> */}
             </motion.div>
             <motion.div
+              data-aos="fade-left"
               className="dark:bg-dark/50 border-2 border-yellow-300 bg-white p-6 text-justify shadow-lg transition-shadow duration-200 hover:shadow-2xl"
-              variants={fadeInUp}
+              // variants={fadeInUp}
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-xl font-extrabold text-yellow-700 dark:text-yellow-300">

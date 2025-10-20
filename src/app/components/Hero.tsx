@@ -31,7 +31,7 @@ export default function Hero() {
           >
             Hi, I&apos;m{" "}
             <motion.span
-              className="text-primary"
+              className="text-blue-500"
               {...fadeIn}
               transition={{ delay: 0.8 }}
             >

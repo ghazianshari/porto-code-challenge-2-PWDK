@@ -19,7 +19,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Portfolio | Ghazi Anshari",
-  description: "Purwadhika Code Challenge 2 Portfolio.",
+  description: "Purwadhika Portfolio.",
+  icons: {
+    icon: "/bulb.ico",
+    shortcut: "/bulb.ico",
+    apple: "/bulb.ico",
+  },
 };
 
 export default function RootLayout({

@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'Sample SaaS Landing Page',
     link: 'https://mistertuki.vercel.app',
     description: 'A dummy sample of a SaaS landing page.',
-    technologies: ['Nest.js', 'Typescript', 'Tailwind CSS',],
+    technologies: ['Next.js', 'Typescript', 'Tailwind CSS',],
     githubLink: 'https://github.com',
     demoLink: '/',
     image: '/projects/tukimandkk-sample.png',
@@ -36,13 +36,13 @@ export const projects: Project[] = [
     }
   },
   {
-    title: 'Simple Pokeman Search App',
-    link: '/pokemon-app',
-    description: 'A simple pokemon search app.',
+    title: 'Simple Pokedex App',
+    link: 'https://pokedex-portofolio.vercel.app',
+    description: 'A simple pokemon search app. Simulating fetching data from external API.',
     technologies: ['Stack 1', 'Stack 2', 'Stack 3', 'Stack Overflow'],
     githubLink: 'https://github.com',
     demoLink: '/',
-    image: '/logo/tgma-logo-clean.png',
+    image: '/projects/pokedex-sample.png',
     slug: 'slug-3',
     starmethod: {
       s: "This is to be filled further on purwadhika progression",

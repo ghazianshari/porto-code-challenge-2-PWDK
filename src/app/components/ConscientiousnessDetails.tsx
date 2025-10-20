@@ -25,7 +25,7 @@ export const ConscientiousnessDetails = () => {
           </p>
           <div className="relative my-4 h-70 w-full">
             <Image
-              src="/personalities/agreeableness.png"
+              src="/personalities/conscientiousness.png"
               alt="Agreeableness Graph"
               fill
               style={{ objectFit: "contain" }}
