@@ -333,12 +333,11 @@ export default function About() {
                 <li>Communicate and handle suppliers</li>
                 <li>Innovate new products</li>
                 <li>
-                  Surveying Coffee Machine and base materials used for food and
-                  beverages
+                  Managed digital payment and POS tools admin
                 </li>
-                <li>Back-up Barista</li>
-                <li>Handle digital payment and POS tools used</li>
-                <li>Documenting and creating COGS of every products</li>
+                <li>Prepared detailed product Cost of Goods Sold (COGS) documentation</li>
+                <li>Handling and directing field staffs, resolve conflicts and aspirations</li>
+                <li>Preparing monthly report to the owner of the coffee shop</li>
               </ul>
             </motion.div>
 
@@ -407,7 +406,7 @@ export default function About() {
               // {...cardHoverSmall}
             >
               <h3 className="mb-2 text-xl font-extrabold text-yellow-700 dark:text-yellow-300">
-                Universitas Terbuka (On Progress)
+                Universitas Terbuka
               </h3>
               <p className="mb-2 font-semibold text-blue-500">
                 College • Information System Undergraduate • 2023
